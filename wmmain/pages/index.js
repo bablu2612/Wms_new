@@ -3,6 +3,7 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import Header from "./Components/Header/Header";
 import styles from "../styles/Home.module.scss";
+import Banner from "./Components/Banner/Banner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+      <Banner />
     </>
   );
 }
