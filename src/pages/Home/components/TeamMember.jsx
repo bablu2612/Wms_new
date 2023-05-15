@@ -21,12 +21,12 @@ function TeamMember() {
     return (
         <div className='mainTeamMember_class'>
             <div className='ourPricing'>
-                <div class="elementor-widget-container">
-                    <div class="ct-video-player ct-video-style1">
-                        <div class="ct-video-box">
-                            <a class="ct-video-button  style1" href="https://www.youtube.com/watch?v=SF4aHwxHtZ0">
-                                <i class="fa fa-play"></i>
-                                <span class="ct-video-text el-empty"></span>
+                <div className="elementor-widget-container">
+                    <div className="ct-video-player ct-video-style1">
+                        <div className="ct-video-box">
+                            <a className="ct-video-button  style1" href="https://www.youtube.com/watch?v=SF4aHwxHtZ0">
+                                <i className="fa fa-play"></i>
+                                <span className="ct-video-text el-empty"></span>
                             </a>
                         </div>
                     </div>
@@ -59,17 +59,35 @@ function TeamMember() {
                 </div>
                 <div className='card'>
                     {_.map(TEAM_MEMBER, (row) => (
-                        <div class="grid-item col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12" style="position: absolute; left: 0%; top: 0px;"><div class="item--inner " data-wow-duration="1.2s"><div class="item--holder"><div class="item--image"> <a href="https://demo.casethemes.net/itfirm/team-details/"><img decoding="async" class="no-lazyload " src="https://demo.casethemes.net/itfirm/wp-content/uploads/2021/11/h3-team1-av-260x260.jpg" width="260" height="260" alt="h3-team1-av" title="h3-team1-av"></a></div><h4 class="item--title el-empty"> Veronica Johnson</h4><div class="item--position el-empty">Web Developer</div> <a class="item--details" href="https://demo.casethemes.net/itfirm/team-details/"><i>+</i></a></div><div class="item--holder-hover bg-image" style="background-image: url(https://demo.casethemes.net/itfirm/wp-content/uploads/2021/11/h3-team1.jpg);"><div class="item--holder-inner"><div class="item--desc el-empty"> Lead the team of passionate developers, designers and the strategists with a thought.</div><h4 class="item--title el-empty"> <a href="https://demo.casethemes.net/itfirm/team-details/">Veronica Johnson</a></h4><div class="item--position el-empty">Web Developer</div><div class="item--social"> <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="#" target="_blank"><i class="fab fa-twitter"></i></a> <a href="#" target="_blank"><i class="fab fa-instagram"></i></a></div> <a class="item--details btn btn-primary" href="https://demo.casethemes.net/itfirm/team-details/">Read More<i class="ct-icon-plus size-sm"></i></a></div></div></div></div>
-                        // <div className='cardContainer' key={row?.id}>
-                        //     <div className='imageSection'>
-                        //         <img src={row?.image} alt="img" />
-                        //     </div>
-                        //     <div className='cardContent'>
-                        //         <h3>{row?.name}</h3>
-                        //         <p>{row?.work}</p>
-                        //         <button>+</button>
-                        //     </div>
-                        // </div>
+                        <div className="grid-item" >
+                            <div className="item--inner ">
+                                <div className="item--holder">
+                                    <div className="item--image">
+
+                                        <a href="https://demo.casethemes.net/itfirm/team-details/">
+                                            <img className="no-lazyload " src="https://demo.casethemes.net/itfirm/wp-content/uploads/2021/11/h3-team1-av-260x260.jpg" width="260" height="260" alt="h3-team1-av" /></a>
+                                    </div>
+                                    <h4 className="item--title el-empty">{row?.name}</h4>
+                                    <div className="item--position el-empty">{row?.work}</div>
+                                    <a className="item--details" href="https://demo.casethemes.net/itfirm/team-details/"><i>+</i></a>
+                                </div>
+                                <div className="item--holder-hover bg-image">
+                                    <div className="item--holder-inner">
+                                        <div className="item--desc el-empty">Lead the team of passionate developers, designers and the strategists with a thought.</div>
+                                        <h4 className="item--title el-empty">
+                                            <a href="https://demo.casethemes.net/itfirm/team-details/">{row?.name}</a>
+                                        </h4>
+                                        <div className="item--position el-empty">{row?.work}</div>
+                                        <div className="item--social">
+                                            <a href="#" target="_blank"><i className="fab fa-facebook-f"></i></a>
+                                            <a href="#" target="_blank"><i className="fab fa-twitter"></i></a>
+                                            <a href="#" target="_blank"><i className="fab fa-instagram"></i></a>
+                                        </div>
+                                        <a className="item--details btn btn-primary" href="https://demo.casethemes.net/itfirm/team-details/">Read More<i className="ct-icon-plus size-sm"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     ))}
                 </div>
 
