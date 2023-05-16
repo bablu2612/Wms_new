@@ -3,10 +3,10 @@ import React from 'react';
 
 function WhatWeDoSection() {
     const CardContent = [
-        { id: 1, image: require('../assets/backupIMage.png'), para: "Our goal is to propel your to business forward...", button: "Read more +", heading: "Backup & Recovery" },
-        { id: 2, image: require('../assets/VoIpImage.png'), para: "Our goal is to propel your to business forward...", button: "Read more +", heading: "VoIP Solutions" },
-        { id: 3, image: require('../assets/planningImage.png'), para: "Our goal is to propel your to business forward...", button: "Read more +", heading: "Consulting Planning" },
-        { id: 4, image: require('../assets/itconsultency.png'), para: "Our goal is to propel your to business forward...", button: "Read more +", heading: "IT Consultency" },
+        { id: 1, image: require('../assets/WWDImageFirst.jpg'), para: "Our goal is to propel your to business forward...", button: "Read more +", heading: "Backup & Recovery" },
+        { id: 2, image: require('../assets/WWDImageSecond.jpg'), para: "Our goal is to propel your to business forward...", button: "Read more +", heading: "VoIP Solutions" },
+        { id: 3, image: require('../assets/WWDImageThird.jpg'), para: "Our goal is to propel your to business forward...", button: "Read more +", heading: "Consulting Planning" },
+        { id: 4, image: require('../assets/WWDImageFourth.jpg'), para: "Our goal is to propel your to business forward...", button: "Read more +", heading: "IT Consultency" },
     ]
     return (
         <div className='whatWe_doMain_class'>

@@ -41,10 +41,9 @@ const HomeBanner = () => {
                 //   onSwiper={(swiper) => console.log(swiper)}
                 >
                     {[
-                        { image: require('../assets/sliderImage.png'), title: "Gastroenterioiogy" },
-                        { image: require('../assets/sliderImage.png'), title: "Allergist" },
-                        { image: require('../assets/sliderImage.png'), title: "Psychiatrist" },
-                        { image: require('../assets/sliderImage.png'), title: "Dermatologist" }
+                        { image: require('../assets/headerSlider.jpg'), title: "Gastroenterioiogy" },
+                        { image: require('../assets/headerSliderTwo.jpg'), title: "Allergist" },
+                        { image: require('../assets/headerSliderThree.jpg'), title: "Psychiatrist" },
                     ]?.map(({ image, title }, index) => (
                         <SwiperSlide style={{ height: "564px" }} key={'image' + index}>
                             <img src={image} className="w-100" alt="" />
