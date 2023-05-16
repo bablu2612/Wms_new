@@ -51,16 +51,12 @@ const Testimonial = () => {
   const Card = ({ val }) => {
     return (
       <div>
-        <img src="" alt="testimonial" className="" />
+        <img src={val?.image} alt="testimonial" className="" />
         <div>
-          <h3> Johnson Cecila</h3>
-          <span>CEO /Founder</span>
+          <h3> {val?.name}</h3>
+          <span>{val?.degn}</span>
         </div>
-        <div>
-          This is one of the BEST THEMES I have ever worked with. The extra
-          bells and whistles added to it are amazing. Elementor features add
-          extra flavor. The customer support is very responsive and amazing.
-        </div>
+        <div>{val?.desc}</div>
       </div>
     );
   };
@@ -85,7 +81,7 @@ const Testimonial = () => {
           // effect={"creative"}
           effect="Fade"
           speed={2000}
-          slidesPerView={1}
+          slidesPerView={2}
           pagination={true}
           // modules={[EffectFade,Navigation, Pagination, EffectCreative, Autoplay]}
           modules={[EffectFade, Navigation, Pagination, Autoplay]}
