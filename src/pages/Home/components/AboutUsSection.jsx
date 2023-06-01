@@ -7,16 +7,17 @@ function AboutUsSection() {
       <div className="row">
         <div className="col-md-6">
           <div className="aboutUs_content">
-            <h4>
-              About Us <span></span>
-            </h4>
-            <h3>We Team of Experience It Specialities</h3>
+            <h4>About Us</h4>
+            <h3>
+              We Team of <span className="color_purple">Experience </span>It
+              Specialities
+            </h3>
             <p>
               Over 39,000 people work for us in more than 70 countries all This
               breadth of global coverage, combined with specialist.
             </p>
             <div className="boxes">
-              <div className="box_container">
+              <div className="box_container d-flex">
                 <div className="icon">icon</div>
                 <div className="box_content">
                   <h3>Cloud Based Services Free Spaces</h3>
@@ -27,15 +28,21 @@ function AboutUsSection() {
                   </p>
                 </div>
               </div>
-              <div className="box_container">
+              <div className="box_container d-flex">
                 <div className="icon">icon</div>
                 <div className="box_content">
                   <h3>Expert Team Member</h3>
-                  <p></p>
+                  <p>
+                    What separates theme from all other web design agencies is
+                    the ability to offer the most Friendly Experience you can
+                    imagine.
+                  </p>
                 </div>
               </div>
             </div>
-            <button>Explore More</button>
+            <button class="btn btn_blue">
+              Explore More <span>+</span>
+            </button>
           </div>
         </div>
         <div className="col-md-6">
@@ -53,14 +60,7 @@ function AboutUsSection() {
                   <div class="ct-banner-counter">
                     <div class="ct-counter-inner">
                       <div class="ct-counter-title el-empty">Science</div>
-                      <div
-                        class="ct-counter-number-value"
-                        data-duration="2000"
-                        data-to-value="2010"
-                        data-delimiter=""
-                      >
-                        2010
-                      </div>
+                      <div class="ct-counter-number-value">2010</div>
                     </div>
                   </div>
                   <div class="item--title el-empty">

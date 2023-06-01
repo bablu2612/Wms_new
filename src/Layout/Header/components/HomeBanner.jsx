@@ -14,7 +14,7 @@ const HomeBanner = () => {
         <h3>We Are Creative</h3>
         <h2>
           {" "}
-          Best It <span>Solution</span> Company
+          Best It <span className="color_purple">Solution</span> Company
         </h2>
         <p>
           Get the most of reduction in your team's oprtation creates amazing

@@ -8,6 +8,9 @@ const GlobelStyleCss = createGlobalStyle`
     box-sizing: border-box;
 	font-family: 'Inter', sans-serif;
 }
+h1,h2,h3{
+    font-family: "Poppins", Sans-serif;
+}
 .mainbanner {
     background: url(https://demo.casethemes.net/itfirm/wp-content/uploads/2021/11/h3-bg-slider1.jpg;) no-repeat;
     background-size: cover;
@@ -97,25 +100,8 @@ const GlobelStyleCss = createGlobalStyle`
 
 
 .buttonSections { 
-    gap: 20px;
-	button.btn {
-    padding: 0px 26px 0px 26px;
-    border-radius: 5px 5px 5px 5px;
-    font-family: "Poppins", Sans-serif;
-    font-size: 15px;
-    line-height: 55px;
-    font-weight: 600;
-    border: none;
-    color: #fff;
-} 
-.btn_purple { 
-    background: rgb(36,57,255);
-    background: linear-gradient(90deg, rgba(36,57,255,1) 0%, rgba(144,0,255,1) 100%);
-}
+    gap: 20px; 
 
-button.btn.btn_blue {
-    background: #08203A;
-} 
 }
 .swiper-wrapper img{
     border-radius: 10px;overflow: hidden;height: 100%
@@ -222,6 +208,30 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active:after {
     position: relative;
 	z-index: 1;
 }
+ span.color_purple {
+    color: #372FFF;
+    position: relative;
+    z-index: 1;
+    font-family: "Poppins",Sans-serif;
+}
+.btn_purple { 
+    background: rgb(36,57,255);
+    background: linear-gradient(90deg, rgba(36,57,255,1) 0%, rgba(144,0,255,1) 100%);
+}
+.btn {
+    padding: 0px 26px 0px 26px;
+    border-radius: 5px 5px 5px 5px;
+    font-family: "Poppins", Sans-serif;
+    font-size: 15px;
+    line-height: 55px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+} 
+button.btn.btn_blue {
+    background: #08203A;
+} 
 @keyframes animationFramesFive {
     0% {
         transform: translateY(0)
