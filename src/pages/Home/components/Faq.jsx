@@ -45,7 +45,8 @@ const Faq = () => {
     });
   };
 
-  return (
+    return (
+      
     <section>
       <div>
         <span>FAQs</span>
