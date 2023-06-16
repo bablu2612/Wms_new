@@ -9,11 +9,13 @@ import Faq from "./components/Faq";
 
 function HomePage() {
   return (
-    <HomePageStyleCss className="mainHomepage_class">
-      <AboutUsSection />
-      <WhatWeDoSection />
-      <TeamMember />
-      <Faq />
+    <HomePageStyleCss>
+      <div className="mainHomepage_class">
+        <AboutUsSection />
+        <WhatWeDoSection />
+        <TeamMember />
+        <Faq />
+      </div>
       <Testimonial />
       <BlogSection />
     </HomePageStyleCss>

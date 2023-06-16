@@ -3,7 +3,7 @@ import AboutUsStyleCss from "../styles/AboutUs.style";
 
 function AboutUsSection() {
   return (
-    <AboutUsStyleCss className="main_aboutUs_section container">
+    <AboutUsStyleCss className="main_aboutUs_section container py-80">
       <div className="row">
         <div className="col-md-6">
           <div className="aboutUs_content">

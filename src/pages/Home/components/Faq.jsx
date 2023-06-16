@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Faqstyle from "../styles/Faq.style";
 const Faq = () => {
   let data = [
     { title: "Question1", content: "Answer1" },
@@ -46,78 +46,99 @@ const Faq = () => {
   };
 
   return (
-    <section>
-      <div>
-        <span>FAQs</span>
-        <h3>
-          <span>Frequently Asked Question</span>
-        </h3>
-        <div>
-          {data.map((item, index) => (
-            <div key={index}>
-              <div onClick={() => toggleAccordion(index)}>{item.title}</div>
-              {activeIndex === index && <div>{item.content}</div>}
+    <Faqstyle>
+      <section>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <div className="faqwrap">
+                <h4>FAQs</h4>
+                <h3>Frequently Asked Question</h3>
+                <div className="wrap-qs">
+                  {data.map((item, index) => (
+                    <div key={index} className="slide_acc">
+                      <div
+                        onClick={() => toggleAccordion(index)}
+                        className="box_bx"
+                      >
+                        {item.title}
+                        <i class="ct-accordion-icon-plus"></i>
+                      </div>
+                      {activeIndex === index && <div>{item.content}</div>}
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
-          ))}
+            <div className="col-md-6">
+              <h4>Get In Touch</h4>
+              <h3>Make An Free IT Consultant</h3>
+              <div>
+                <form onSubmit={handleSubmit}>
+                  <div className="d-flex">
+                    <div className="form-group">
+                      <input
+                        type="text"
+                        name="field1"
+                        value={formData.field1}
+                        onChange={handleInputChange}
+                        className="form-control"
+                      />
+                    </div>
+                    <div className="form-group">
+                      <input
+                        type="text"
+                        name="field2"
+                        value={formData.field2}
+                        onChange={handleInputChange}
+                        className="form-control"
+                      />
+                    </div>
+                  </div>
+                  <div className="d-flex">
+                    <div className="form-group">
+                      <input
+                        type="text"
+                        name="field3"
+                        value={formData.field3}
+                        onChange={handleInputChange}
+                        className="form-control"
+                      />
+                    </div>
+                    <div className="form-group">
+                      <select
+                        name="selectField"
+                        value={formData.selectField}
+                        onChange={handleInputChange}
+                        className="form-control"
+                      >
+                        <option value="">Select an option</option>
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div className="comment">
+                    <textarea
+                      name="textareaField"
+                      value={formData.textareaField}
+                      onChange={handleInputChange}
+                      className="form-control"
+                    ></textarea>
+                  </div>
+                  <div className="btn-wrap">
+                    <button type="submit" className="btn btn_purple">
+                      Submit Now +
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div>
-        <span>Get In Touch</span>
-        <h3>
-          <span>Make An Free IT Consultant</span>
-        </h3>
-        <div>
-          <form onSubmit={handleSubmit}>
-            <div>
-              <input
-                type="text"
-                name="field1"
-                value={formData.field1}
-                onChange={handleInputChange}
-              />
-            </div>
-            <div>
-              <input
-                type="text"
-                name="field2"
-                value={formData.field2}
-                onChange={handleInputChange}
-              />
-            </div>
-            <div>
-              <input
-                type="text"
-                name="field3"
-                value={formData.field3}
-                onChange={handleInputChange}
-              />
-            </div>
-            <div>
-              <select
-                name="selectField"
-                value={formData.selectField}
-                onChange={handleInputChange}
-              >
-                <option value="">Select an option</option>
-                <option value="option1">Option 1</option>
-                <option value="option2">Option 2</option>
-                <option value="option3">Option 3</option>
-              </select>
-            </div>
-            <div>
-              <textarea
-                name="textareaField"
-                value={formData.textareaField}
-                onChange={handleInputChange}
-              ></textarea>
-            </div>
-            <div>
-              <button type="submit">Submit</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
+      </section>
+    </Faqstyle>
   );
 };
 

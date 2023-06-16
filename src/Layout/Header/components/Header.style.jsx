@@ -148,9 +148,9 @@ const HeaderStyleCss = styled.div`
           flex-direction: row;
           height: auto;
           justify-content: flex-end;
-
+          gap: 25px;
           li {
-            padding: 0 20px;
+            padding: 0px;
 
             &:last-child {
               border-bottom: none;

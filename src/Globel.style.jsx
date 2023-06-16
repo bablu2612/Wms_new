@@ -8,7 +8,7 @@ const GlobelStyleCss = createGlobalStyle`
     box-sizing: border-box;
 	font-family: 'Inter', sans-serif;
 }
-h1,h2,h3{
+h1,h2,h3,h4{
     font-family: "Poppins", Sans-serif;
 }
 .mainbanner {
@@ -36,7 +36,7 @@ h1,h2,h3{
 	  }
 	  @media (min-width: 1600px){
 		.slider_section {
-				min-width: 45vw;
+				min-width: 45vw; 
 			}
 	  }
 	  
@@ -104,10 +104,10 @@ h1,h2,h3{
 
 }
 .swiper-wrapper img{
-    border-radius: 10px;overflow: hidden;height: 100%
+    border-radius: 10px;overflow: hidden;height: 100%;object-fit: cover;
 }
 
-span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+span.swiper-pagination-bullet.swiper-pagination-bullet-active, .item--image:before,.item--holder-hover:before  {
     background-image: -webkit-gradient(linear, left top, right top, from(#2439ff), to(#9000ff));
     background-image: -webkit-linear-gradient(to left, #2439ff, #9000ff);
     background-image: -moz-linear-gradient(to left, #2439ff, #9000ff);
@@ -138,10 +138,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     z-index: 1;
     overflow: visible;
     opacity: 1;
-    background-color: #08203a;
-}
-
-span.swiper-pagination-bullet {
+    background-color: #08203a; 
     position: relative;
 }
 
@@ -208,7 +205,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active:after {
     position: relative;
 	z-index: 1;
 }
- span.color_purple {
+ .color_purple {
     color: #372FFF;
     position: relative;
     z-index: 1;
@@ -229,9 +226,219 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active:after {
     cursor: pointer;
     color: #fff;
 } 
-button.btn.btn_blue {
-    background: #08203A;
+.btn.btn_blue {
+    background: #08203A; 
+}
+ .btn.btn-dark1.btn_blue {
+    height: 36px;
+    line-height: 35px;
+    text-decoration: none; 
+    display: inline-flex;
+    padding: 0 15px;
+}
+.text-center{
+    text-align: center;
+}
+ 
+
+.item--image {
+    width: 130px;
+    height: 130px;
+    padding: 3px;
+    position: relative;
+    margin: 0 auto 24px;
+    -webkit-border-radius: 130px;
+    -khtml-border-radius: 130px;
+    -moz-border-radius: 130px;
+    -ms-border-radius: 130px;
+    -o-border-radius: 130px;
+    border-radius: 130px;
+    z-index: 1;
+  img {
+    border: 7px solid #fff;
+    -webkit-border-radius: 130px;
+    -khtml-border-radius: 130px;
+    -moz-border-radius: 130px;
+    -ms-border-radius: 130px;
+    -o-border-radius: 130px;
+    border-radius: 130px;
+    width: 100%;
+    height: 100%;
+}
+&:before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 130px;
+    -khtml-border-radius: 130px;
+    -moz-border-radius: 130px;
+    -ms-border-radius: 130px;
+    -o-border-radius: 130px;
+    border-radius: 130px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#2439ff), to(#9000ff));
+    background-image: -webkit-linear-gradient(to left, #2439ff, #9000ff);
+    background-image: -moz-linear-gradient(to left, #2439ff, #9000ff);
+    background-image: -ms-linear-gradient(to left, #2439ff, #9000ff);
+    background-image: -o-linear-gradient(to left, #2439ff, #9000ff);
+    background-image: linear-gradient(to left, #2439ff, #9000ff);
+}
+}
+
+
+
+
+/* Success */ 
+.ourPricing {
+    background: url("https://demo.casethemes.net/itfirm/wp-content/uploads/2021/11/h3-bg-section-03.jpg")
+      no-repeat;
+    background-size: cover;
+    padding: 80px 0px 130px 0px;
+  }
+  
+ 
+  .preparing_class h3 {
+    color: #FFFFFF;
+    font-family: "Poppins", Sans-serif;
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 14px;
+}  
+.ct-video-button {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    display: inline-grid;
+     place-content: center;
+    position: relative;
+    z-index: 1;
+                svg.bi.bi-play-fill {
+                width: 30px;
+                height: 30px;
+            }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(36,57,255,1) 0%, rgba(144,0,255,1) 100%);
+            -webkit-border-radius: 100%;
+            -khtml-border-radius: 100%;
+            -moz-border-radius: 100%;
+            -ms-border-radius: 100%;
+            -o-border-radius: 100%;
+            border-radius: 100%;
+            z-index: -1;
+        }
+    &:after {
+        content: "";
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #3630ff;;
+        border-radius: 50%;
+        animation: pulse-border2 1500ms ease-out infinite;
+        -webkit-animation: pulse-border2 1500ms ease-out infinite;
+        z-index: -2;
+        opacity: .65;
+    }
+
+ &:hover:after {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused
+}
 } 
+.specific_class {
+    margin: 0px 0px 34px 0px;
+    padding: 0% 16% 0% 16%;
+    p {
+    text-align: center;
+    color: #C6CBDB;
+}
+}
+.ct-video-box {
+    margin-bottom: 50px;
+}
+
+@keyframes pulse-border2 {
+    0% {
+        transform: scale(1);
+        opacity: .67
+    }
+
+    100% {
+        transform: scale(2.2);
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes pulse-border2 {
+    0% {
+        transform: scale(1);
+        opacity: .67
+    }
+
+    100% {
+        transform: scale(2.2);
+        opacity: 0
+    }
+}
+
+
+
+.heading_head {
+      h3 {
+        color: #3630ff;
+        font-size: 20px;
+        font-family: "Inter", sans-serif;
+        position: relative;
+        max-width: max-content;
+        z-index: 1;
+        margin: 0 auto 10px;
+        mix-blend-mode: darken;
+        &:before {
+          content: "";
+          background-color: #3630ff;
+          width: 280px;
+          height: 3px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: -1;
+        }
+        span{
+            position: relative;
+            z-index: 9;
+            background: #fff;
+            padding: 0 10px;
+        } 
+      }
+      h2 {
+        font-size: 36px;
+        line-height: 48px;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+    }
+
+/* 02-06-2023 */
+.mainHomepage_class{background: url(https://demo.casethemes.net/itfirm/wp-content/uploads/2021/11/h3-bg-section-01.jpg)
+    no-repeat;}
 @keyframes animationFramesFive {
     0% {
         transform: translateY(0)
@@ -262,6 +469,13 @@ button.btn.btn_blue {
 	margin-left: -15px;
 	margin-right: -15px;
 }
+ .py-80{
+     padding-top: 80px;
+     padding-bottom: 80px;
+ }
+ .mb-0{
+    margin-bottom: 0;
+ }
 @media (min-width: 768px){
 	.col-md-6 {
     -webkit-box-flex: 0;
@@ -271,6 +485,7 @@ button.btn.btn_blue {
 	padding-left: 15px;
 	padding-right: 15px;
 }
+
 }
 `;
 export default GlobelStyleCss;
