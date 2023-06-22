@@ -47,7 +47,7 @@ const Faq = () => {
 
   return (
     <Faqstyle>
-      <section>
+      <section className="parent_fq">
         <div className="container">
           <div className="row">
             <div className="col-md-6">

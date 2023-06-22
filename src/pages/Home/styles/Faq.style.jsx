@@ -154,6 +154,9 @@ const Faqstyle = styled.div`
     .btn-wrap {
       margin-top: 20px;
     }
+    section.parent_fq {
+      padding: 105px 0px 110px 0px;
+    }
   }
 `;
 
