@@ -139,7 +139,7 @@ function TeamMember() {
                         <a href="https://demo.casethemes.net/itfirm/team-details/">
                           <img
                             className="no-lazyload "
-                            src="https://demo.casethemes.net/itfirm/wp-content/uploads/2021/11/h3-team1-av-260x260.jpg"
+                            src={require('../assets/TMfirstProfile.jpg')}
                             width="260"
                             height="260"
                             alt="h3-team1-av"

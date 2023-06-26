@@ -79,7 +79,7 @@ function AboutUsSection() {
                   <div class="ct-banner-image">
                     <img
                       className=""
-                      src="https://demo.casethemes.net/itfirm/wp-content/uploads/2021/11/h3-banner1-650x650.jpg"
+                      src={require('../assets/aboutImage.jpg')}
                       alt="h3-banner1"
                     />
                   </div>

@@ -6,7 +6,74 @@ const TeamMemberStyle = styled.div`
       no-repeat;
     background-size: cover;
   } */
+  .ourPricing {
+      display: block;
+      background: ${props => `url(${require('../assets/OurPricing.jpg')})`} no-repeat;
+      background-size: cover;
+      padding: 80px 0px 130px 0px;
+    }
+    .preparing_class h3 {
+    color: #FFFFFF;
+    font-family: "Poppins", Sans-serif;
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 14px;
+}  
+.ct-video-button {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    display: inline-grid;
+     place-content: center;
+    position: relative;
+    z-index: 1;
+                svg.bi.bi-play-fill {
+                width: 30px;
+                height: 30px;
+            }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(36,57,255,1) 0%, rgba(144,0,255,1) 100%);
+            -webkit-border-radius: 100%;
+            -khtml-border-radius: 100%;
+            -moz-border-radius: 100%;
+            -ms-border-radius: 100%;
+            -o-border-radius: 100%;
+            border-radius: 100%;
+            z-index: -1;
+        }
+    &:after {
+        content: "";
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #3630ff;;
+        border-radius: 50%;
+        animation: pulse-border2 1500ms ease-out infinite;
+        -webkit-animation: pulse-border2 1500ms ease-out infinite;
+        z-index: -2;
+        opacity: .65;
+    }
 
+    &:hover:after {
+        -webkit-animation-play-state: paused;
+        -moz-animation-play-state: paused;
+        -o-animation-play-state: paused;
+        animation-play-state: paused
+    }
+} 
   .clientReview {
     box-shadow: 0px 10px 50px 0px rgba(0, 10.000000000000036, 80, 0.05);
     transition: background 0.3s, border 0.3s, border-radius 0.3s,

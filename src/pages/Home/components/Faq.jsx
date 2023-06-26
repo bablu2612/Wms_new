@@ -77,28 +77,17 @@ const Faq = () => {
                 <form onSubmit={handleSubmit}>
                   <div className="d-flex">
                     <div className="form-group">
-                      <input
-                        type="text"
-                        name="field1"
-                        value={formData.field1}
-                        onChange={handleInputChange}
-                        className="form-control"
-                      />
+                      <input type="text" name="field1" value={formData.field1} placeholder="Your Name*" onChange={handleInputChange} className="form-control" />
                     </div>
                     <div className="form-group">
-                      <input
-                        type="text"
-                        name="field2"
-                        value={formData.field2}
-                        onChange={handleInputChange}
-                        className="form-control"
-                      />
+                      <input type="text" name="field2" value={formData.field2} placeholder="Mail*" onChange={handleInputChange} className="form-control" />
                     </div>
                   </div>
                   <div className="d-flex">
                     <div className="form-group">
                       <input
                         type="text"
+                        placeholder="Your Phone"
                         name="field3"
                         value={formData.field3}
                         onChange={handleInputChange}
@@ -107,6 +96,7 @@ const Faq = () => {
                     </div>
                     <div className="form-group">
                       <select
+                        placeholder="Select Service"
                         name="selectField"
                         value={formData.selectField}
                         onChange={handleInputChange}
@@ -121,6 +111,7 @@ const Faq = () => {
                   </div>
                   <div className="comment">
                     <textarea
+                      placeholder="Your Message*"
                       name="textareaField"
                       value={formData.textareaField}
                       onChange={handleInputChange}
