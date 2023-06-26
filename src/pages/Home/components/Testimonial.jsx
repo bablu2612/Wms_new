@@ -8,44 +8,45 @@ import {
   EffectFade,
 } from "swiper";
 import Testimonialstyle from "../styles/Testimonial.style";
+import { Rating } from "@mui/material";
 
 const Testimonial = () => {
   let data = [
     {
       image: require("../assets/testdemo.png"),
-      name: "Thakur",
-      degn: "Design Predident",
-      desc: "This is one of the BEST THEMES I have ever worked with. The extra bells and whistles added to it are amazing. Elementor features add extra flavor. The customer support is very responsive and amazing.",
+      rating: 5,
+      name: "eClientCare Inc",
+      desc: "had a great experience working with him, but because of budget constraints i have to end the contract.",
     },
     {
       image: require("../assets/testdemo.png"),
-      name: "Thakur",
-      degn: "Design Predident",
-      desc: "This is one of the BEST THEMES I have ever worked with. The extra bells and whistles added to it are amazing. Elementor features add extra flavor. The customer support is very responsive and amazing.",
+      rating: 5,
+      name: "Osman Khan",
+      desc: "They was amazing. He has excellent knowledge of API and integration. He gets on with the job and doesn't stop until he is finished. I will definitely be using him in the future. Highly Reccomend",
     },
     {
       image: require("../assets/testdemo.png"),
-      name: "Thakur",
-      degn: "Design Predident",
-      desc: "This is one of the BEST THEMES I have ever worked with. The extra bells and whistles added to it are amazing. Elementor features add extra flavor. The customer support is very responsive and amazing.",
+      name: "David Lee",
+      rating: 5,
+      desc: "Amazing dev please hire if you need help with a big or small project bablu is a fast worker and amazing problem solver.",
     },
     {
       image: require("../assets/testdemo.png"),
-      name: "Thakur",
-      degn: "Design Predident",
-      desc: "This is one of the BEST THEMES I have ever worked with. The extra bells and whistles added to it are amazing. Elementor features add extra flavor. The customer support is very responsive and amazing.",
+      name: "Jade Shah",
+      rating: 5,
+      desc: "They are very professional freelancers. He is very much committed with the job given.",
     },
     {
       image: require("../assets/testdemo.png"),
-      name: "Thakur",
-      degn: "Design Predident",
-      desc: "This is one of the BEST THEMES I have ever worked with. The extra bells and whistles added to it are amazing. Elementor features add extra flavor. The customer support is very responsive and amazing.",
+      name: "Jake",
+      rating: 5,
+      desc: "Bablu has been a valuable part of my development team. Will definitely use him again in the future.",
     },
     {
       image: require("../assets/testdemo.png"),
-      name: "Thakur",
-      degn: "Design Predident",
-      desc: "This is one of the BEST THEMES I have ever worked with. The extra bells and whistles added to it are amazing. Elementor features add extra flavor. The customer support is very responsive and amazing.",
+      name: "Offek K",
+      rating: 5,
+      desc: "Was great working with him. Very responsive and does all that is required very quickly. He did the best work possible and was able to complete suggestions mid-work as well. Very satisfied and will definitely work with again. Highly recommend!",
     },
   ];
 
@@ -58,8 +59,17 @@ const Testimonial = () => {
             <img src={val?.image} alt="testimonial" className="" />
           </div>
           <div className="item--meta">
+            <div>
+              <Rating
+                name="simple-controlled"
+                value={val?.rating}
+                readOnly
+              // onChange={(event, newValue) => {
+              //   setValue(newValue);
+              // }}
+              />
+            </div>
             <h3>{val?.name}</h3>
-            <div className="item--position el-empty">{val?.degn}</div>
           </div>
         </div>
         <div className="item--description el-empty">{val?.desc}</div>
@@ -111,8 +121,8 @@ const Testimonial = () => {
                   delay: 3500,
                   disableOnInteraction: false,
                 }}
-                //   onSlideChange={() => console.log("slide change")}
-                //   onSwiper={(swiper) => console.log(swiper)}
+              //   onSlideChange={() => console.log("slide change")}
+              //   onSwiper={(swiper) => console.log(swiper)}
               >
                 {data?.map((val, index) => {
                   return (

@@ -30,7 +30,7 @@ const Testimonialstyle = styled.div`
       }
     }
     h3 {
-      color: #ffffff;
+      color: #000;
       font-family: "Poppins", Sans-serif;
       font-size: 36px;
       line-height: 48px;
