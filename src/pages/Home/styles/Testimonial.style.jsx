@@ -29,12 +29,21 @@ const Testimonialstyle = styled.div`
         transform: translate(0, -50%);
       }
     }
+    .headingtest {
+      h3 {
+        color: #fff;
+      }
+    }
     h3 {
       color: #000;
       font-family: "Poppins", Sans-serif;
       font-size: 36px;
       line-height: 48px;
       margin-bottom: 0px;
+      @media (max-width: 1024px) {
+        font-size: 32px;
+        line-height: 42px;
+      }
     }
     .item--inner {
       &:before {
@@ -54,7 +63,12 @@ const Testimonialstyle = styled.div`
         z-index: -1;
       }
     }
-
+    .item--meta {
+      h3 {
+        font-size: 18px;
+        line-height: normal;
+      }
+    }
     .container {
       .row {
         align-items: flex-end;
@@ -76,6 +90,8 @@ const Testimonialstyle = styled.div`
       flex-wrap: nowrap;
       align-items: center;
       margin-bottom: 18px;
+      padding: 0;
+      gap: 10px;
     }
     .item--image {
       padding: 2px;
@@ -118,6 +134,21 @@ const Testimonialstyle = styled.div`
       -ms-transition: 0.3s cubic-bezier(0.24, 0.74, 0.58, 1);
       -o-transition: 0.3s cubic-bezier(0.24, 0.74, 0.58, 1);
       transition: 0.3s cubic-bezier(0.24, 0.74, 0.58, 1);
+      background-color: initial;
+      background-clip: text;
+      -o-background-clip: text;
+      -ms-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-background-clip: text;
+      text-fill-color: transparent;
+      -o-text-fill-color: transparent;
+      -ms-text-fill-color: transparent;
+      -moz-text-fill-color: transparent;
+      -webkit-text-fill-color: transparent;
+      @media (max-width: 991px) {
+        font-size: 100px;
+        top: -30px;
+      }
     }
     .item--inner {
       background-color: #fff;
@@ -192,6 +223,16 @@ const Testimonialstyle = styled.div`
         height: 400px !important;
       }
     }
+  }
+  .swiper-wrapper {
+    margin-bottom: 70px;
+  }
+
+  .item--meta > * {
+    width: 100%;
+  }
+  .swiper-pagination span.swiper-pagination-bullet {
+    background: #6c8daf;
   }
 `;
 

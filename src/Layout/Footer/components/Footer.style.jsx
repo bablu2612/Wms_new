@@ -4,6 +4,9 @@ const FooterStyleCss = styled.div`
   /* footer section css */
   background: url("https://demo.casethemes.net/itfirm/wp-content/uploads/2021/11/h3-bg-footer.jpg")
     no-repeat;
+  background-size: cover;
+  @media (max-width: 991px) {
+  }
   .footer_first_row p {
     color: #b2c0cd;
   }
@@ -14,6 +17,10 @@ const FooterStyleCss = styled.div`
       flex: calc(100% / 4);
       width: 100%;
       padding: 0 15px;
+      @media (max-width: 991px) {
+        max-width: calc(100% / 2);
+        flex: calc(100% / 2);
+      }
       p {
         color: #fff;
         font-weight: 400;
@@ -60,6 +67,9 @@ const FooterStyleCss = styled.div`
           align-items: center;
           border-radius: 0 5px 5px 0;
           cursor: pointer;
+          max-width: 50px;
+          flex: auto;
+          width: 100%;
         }
         input[type="text"] {
           background-color: #fafafa;
@@ -72,6 +82,9 @@ const FooterStyleCss = styled.div`
           border: none;
           box-shadow: none;
           outline: none;
+          width: 100%;
+          max-width: calc(100% - 50px);
+          flex: auto;
         }
       }
     }

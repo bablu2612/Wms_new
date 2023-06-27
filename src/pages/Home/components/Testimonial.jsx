@@ -9,7 +9,6 @@ import {
 } from "swiper";
 import Testimonialstyle from "../styles/Testimonial.style";
 import { Rating } from "@mui/material";
-
 const Testimonial = () => {
   let data = [
     {
@@ -64,9 +63,9 @@ const Testimonial = () => {
                 name="simple-controlled"
                 value={val?.rating}
                 readOnly
-              // onChange={(event, newValue) => {
-              //   setValue(newValue);
-              // }}
+                // onChange={(event, newValue) => {
+                //   setValue(newValue);
+                // }}
               />
             </div>
             <h3>{val?.name}</h3>
@@ -121,8 +120,8 @@ const Testimonial = () => {
                   delay: 3500,
                   disableOnInteraction: false,
                 }}
-              //   onSlideChange={() => console.log("slide change")}
-              //   onSwiper={(swiper) => console.log(swiper)}
+                //   onSlideChange={() => console.log("slide change")}
+                //   onSwiper={(swiper) => console.log(swiper)}
               >
                 {data?.map((val, index) => {
                   return (

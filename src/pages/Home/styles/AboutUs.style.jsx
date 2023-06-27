@@ -30,11 +30,19 @@ const AboutUsStyleCss = styled.div`
       font-size: 36px;
       line-height: 48px;
       margin-bottom: 24px;
+      @media (max-width: 1024px) {
+        font-size: 32px;
+        line-height: 42px;
+      }
     }
     & > p {
       color: #666666;
       font-size: 20px;
       line-height: 30px;
+      @media (max-width: 1024px) {
+        font-size: 18px;
+        line-height: 28px;
+      }
     }
     .box_container {
       padding: 20px 30px;

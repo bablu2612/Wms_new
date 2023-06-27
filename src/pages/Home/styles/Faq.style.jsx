@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const Faqstyle = styled.div`
+  background: url("https://demo.casethemes.net/itfirm/wp-content/uploads/2021/11/h3-bg-section-04.jpg");
   h4 {
     padding-right: 96px;
     position: relative;
@@ -30,6 +31,10 @@ const Faqstyle = styled.div`
     font-size: 36px;
     line-height: 48px;
     margin-bottom: 48px;
+    @media (max-width: 1024px) {
+      font-size: 32px;
+      line-height: 42px;
+    }
   }
 
   .wrap-qs {

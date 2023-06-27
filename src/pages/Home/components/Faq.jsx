@@ -47,7 +47,7 @@ const Faq = () => {
 
   return (
     <Faqstyle>
-      <section className="parent_fq">
+      <section className="parent_fq py-80">
         <div className="container">
           <div className="row">
             <div className="col-md-6">
@@ -77,10 +77,24 @@ const Faq = () => {
                 <form onSubmit={handleSubmit}>
                   <div className="d-flex">
                     <div className="form-group">
-                      <input type="text" name="field1" value={formData.field1} placeholder="Your Name*" onChange={handleInputChange} className="form-control" />
+                      <input
+                        type="text"
+                        name="field1"
+                        value={formData.field1}
+                        placeholder="Your Name*"
+                        onChange={handleInputChange}
+                        className="form-control"
+                      />
                     </div>
                     <div className="form-group">
-                      <input type="text" name="field2" value={formData.field2} placeholder="Mail*" onChange={handleInputChange} className="form-control" />
+                      <input
+                        type="text"
+                        name="field2"
+                        value={formData.field2}
+                        placeholder="Mail*"
+                        onChange={handleInputChange}
+                        className="form-control"
+                      />
                     </div>
                   </div>
                   <div className="d-flex">

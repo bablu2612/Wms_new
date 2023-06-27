@@ -7,19 +7,39 @@ const TeamMemberStyle = styled.div`
     background-size: cover;
   } */
   .ourPricing {
-      display: block;
-      background: ${props => `url(${require('../assets/OurPricing.jpg')})`} no-repeat;
-      background-size: cover;
-      padding: 80px 0px 130px 0px;
+    display: block;
+    background: ${(props) => `url(${require("../assets/OurPricing.jpg")})`}
+      no-repeat;
+    background-size: cover;
+    padding: 80px 0px 130px 0px;
+  }
+  .preparing_class {
+    h3 {
+      color: #ffffff;
+      font-family: "Poppins", Sans-serif;
+      font-size: 36px;
+      line-height: 48px;
+      margin-bottom: 14px;
+      @media (max-width: 1024px) {
+        font-size: 32px;
+        line-height: 42px;
+        max-width: 840px;
+        margin: 0 auto 20px;
+        br {
+          display: none;
+        }
+      }
     }
-    .preparing_class h3 {
-    color: #FFFFFF;
-    font-family: "Poppins", Sans-serif;
-    font-size: 36px;
-    line-height: 48px;
-    margin-bottom: 14px;
-}  
-.ct-video-button {
+  }
+  .specific_class {
+    p {
+      font-size: 18px;
+      color: #c6cbdb;
+      margin-bottom: 30px;
+      line-height: 1.5;
+    }
+  }
+  .ct-video-button {
     width: 60px;
     height: 60px;
     line-height: 60px;
@@ -27,65 +47,58 @@ const TeamMemberStyle = styled.div`
     color: #fff;
     font-size: 18px;
     display: inline-grid;
-     place-content: center;
+    place-content: center;
     position: relative;
     z-index: 1;
-                svg.bi.bi-play-fill {
-                width: 30px;
-                height: 30px;
-            }
-        &:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, rgba(36,57,255,1) 0%, rgba(144,0,255,1) 100%);
-            -webkit-border-radius: 100%;
-            -khtml-border-radius: 100%;
-            -moz-border-radius: 100%;
-            -ms-border-radius: 100%;
-            -o-border-radius: 100%;
-            border-radius: 100%;
-            z-index: -1;
-        }
+    svg.bi.bi-play-fill {
+      width: 30px;
+      height: 30px;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        rgba(36, 57, 255, 1) 0%,
+        rgba(144, 0, 255, 1) 100%
+      );
+      -webkit-border-radius: 100%;
+      -khtml-border-radius: 100%;
+      -moz-border-radius: 100%;
+      -ms-border-radius: 100%;
+      -o-border-radius: 100%;
+      border-radius: 100%;
+      z-index: -1;
+    }
     &:after {
-        content: "";
-        position: absolute;
-        z-index: 0;
-        left: 0;
-        top: 0;
-        display: block;
-        width: 100%;
-        height: 100%;
-        background-color: #3630ff;;
-        border-radius: 50%;
-        animation: pulse-border2 1500ms ease-out infinite;
-        -webkit-animation: pulse-border2 1500ms ease-out infinite;
-        z-index: -2;
-        opacity: .65;
+      content: "";
+      position: absolute;
+      z-index: 0;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: #3630ff;
+      border-radius: 50%;
+      animation: pulse-border2 1500ms ease-out infinite;
+      -webkit-animation: pulse-border2 1500ms ease-out infinite;
+      z-index: -2;
+      opacity: 0.65;
     }
 
     &:hover:after {
-        -webkit-animation-play-state: paused;
-        -moz-animation-play-state: paused;
-        -o-animation-play-state: paused;
-        animation-play-state: paused
+      -webkit-animation-play-state: paused;
+      -moz-animation-play-state: paused;
+      -o-animation-play-state: paused;
+      animation-play-state: paused;
     }
-} 
+  }
   .clientReview {
-    box-shadow: 0px 10px 50px 0px rgba(0, 10.000000000000036, 80, 0.05);
-    transition: background 0.3s, border 0.3s, border-radius 0.3s,
-      box-shadow 0.3s;
-    padding: 39px 0px 39px 0px;
-    z-index: 99;
-    background: #fff;
-    display: flex;
-    max-width: 1170px;
-    margin: -70px auto 0;
-    justify-content: center;
-    border-radius: 5px;
     .ct-counter-number {
       display: flex;
       white-space: nowrap;
@@ -99,11 +112,6 @@ const TeamMemberStyle = styled.div`
       font-size: 18px;
       color: #444;
       line-height: normal;
-    }
-    .small_box {
-      display: flex;
-      flex-wrap: nowrap;
-      align-items: center;
     }
   }
 
@@ -119,6 +127,9 @@ const TeamMemberStyle = styled.div`
     margin: -70px auto 0;
     justify-content: center;
     border-radius: 5px;
+    @media (max-width: 1024px) {
+      flex-wrap: wrap;
+    }
     h3 {
       display: flex;
       white-space: nowrap;
@@ -140,6 +151,11 @@ const TeamMemberStyle = styled.div`
       flex: 1;
       justify-content: center;
       position: relative;
+      @media (max-width: 1024px) {
+        flex: auto;
+        max-width: calc(100% / 2);
+        width: 100%;
+      }
       &:before {
         content: "";
         width: 3px;
@@ -171,10 +187,19 @@ const TeamMemberStyle = styled.div`
 
   .card {
     justify-content: space-between;
+    @media (max-width: 1024px) {
+      justify-content: center;
+      gap: 0 30px;
+      flex-wrap: wrap;
+    }
     .grid-item {
       max-width: calc(100% / 5 - 20px);
       width: 100%;
       flex: auto;
+      @media (max-width: 1024px) {
+        max-width: calc(100% / 3 - 20px);
+        width: 100%;
+      }
     }
 
     .item--holder {

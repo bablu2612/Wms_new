@@ -9,6 +9,9 @@ const WhatweDosectionstyle = styled.div`
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 30px;
+      @media (max-width: 991px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
 
     .grid-item-inner {
@@ -16,6 +19,9 @@ const WhatweDosectionstyle = styled.div`
       z-index: 1;
       margin-top: 0;
       margin-bottom: 50px;
+      @media (max-width: 991px) {
+        padding-top: 20px;
+      }
       &:before {
         content: "";
         position: absolute;

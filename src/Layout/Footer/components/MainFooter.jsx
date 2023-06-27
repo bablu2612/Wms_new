@@ -16,7 +16,7 @@ const MainFooter = () => {
           <div className="footer_second_row">
             <h3 className="blue_underline">Newsletter</h3>
             <p>Subscribe our newsletter to get our latest update & news.</p>
-            <div className="field_section">
+            <div className="field_section d-flex">
               <input type="text" placeholder="Your mail address" />
               <button>icon</button>
             </div>
